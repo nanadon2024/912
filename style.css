@@ -1,0 +1,325 @@
+/*　共通スタイル　*/
+body {
+    font-family: Arial, Helvetica, sans-serif, "Hiragino Kaku Gothic ProN", Meiryo;
+    margin: 0;
+    color: dimgray;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+a:link {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: gray;
+}
+
+a:visited {
+    color: gray;
+    }
+
+a:active {
+    color: gray;
+}
+
+/*　スマホスタイル　Header */
+header {
+    display: flex;
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+}
+
+.header {
+    display: flex;
+}
+
+.logo {
+    border: 2px solid dimgray;
+    line-height: 1;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 5px 3px 0 3px;
+    height: 32px;
+    width: 32px;
+    font-size: 30px;
+    margin: 0 0 0 4px;
+}
+
+/*　SP Menu button  なぜRightがゼロだと画面からはみ出てしまうのか？ PCsizeには表示されない*/
+#menu-sp {
+    position: absolute;
+    right: 0;    
+    font-size: 40px;
+    padding-top: 1px;
+}
+
+/*　SP Menu */
+#nav-sp {
+    background-color: gray;
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 100;
+}
+
+#close-sp {
+    position: absolute;
+    top: 20px;
+    right: 4%;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.logo-sp { 
+    position: relative;
+    font-size: 30px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    line-height: 1;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 5px 3px 0 3px;
+    height: 32px;
+    width: 32px;
+    margin-left: 15px;
+    margin-top: 0;
+}
+
+.menu {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 20px auto 20px 20px;
+    color: whitesmoke;
+}
+
+.menu > a:link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.menu > a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.menu > a:visited {
+    color: whitesmoke;
+    }
+
+.menu > a:active {
+    color: black;
+}
+
+main {
+    position: relative;
+    top: 63px;
+}
+
+#main-visual {
+    position: relative;
+}
+
+.main-message {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    border-radius: 50% 0 0 50%;
+}
+
+.main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -53px;
+    margin-left: -10px;
+}
+
+/* WORK section */
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: yellowgreen;
+    padding: 1rem 4%;
+}
+
+.work-item {
+    width: 40%;
+    background-color: aqua;
+    padding: 1%;
+}
+
+/* SKILL section */
+.skill-container {
+    background-color: aquamarine;
+    display: block;
+}
+
+.skill-img {
+    width: 30%
+}
+
+.skill-text {
+    width: 60%;
+    background-color: blanchedalmond;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: blueviolet;
+    }
+
+/* ABOUT section */
+
+.about-container {
+    background-color: cadetblue;
+}
+
+
+.about-img {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.about-img img {
+    border-radius: 50%;
+}
+
+.about-text {
+    padding: 0 40px;
+    background-color: blue;
+}
+
+.about-text p {
+    text-align: center;
+    background-color: beige;
+}
+
+/* CONTACT section */
+#contact {
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 30px;
+}
+
+/* Back-to-top section */
+#back-to-top {
+    background-color: lightgray;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: gray;
+}
+
+/* footer logo to center? */
+
+footer {
+    position: relative;
+    top: 63px;
+    height: 63px;
+    
+}
+
+.logo-footer {
+    position: relative;
+    top: 8px;
+    font-size: 30px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    line-height: 1;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 5px 3px 3px 3px;
+    height: 32px;
+    width: 32px;
+    margin: auto;
+}
+
+
+/* works.html */
+#works-journey p {
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+.arrow {
+    text-align: center;
+}
+
+#work-details {
+    background-color: azure;
+}
+
+.step-description {
+    padding: 15px;
+}
+
+.step-img {
+    width: 90%;
+    margin: auto;
+}
+
+.work-step h2 {
+    padding-top: 20px;
+}
+
+.work-step p {
+    padding-left: 15px;
+}
+
+.work-step h3 {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.work-step h3::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    content: "";
+    border-radius: 3px;
+    background-color: #333;
+  }
+
